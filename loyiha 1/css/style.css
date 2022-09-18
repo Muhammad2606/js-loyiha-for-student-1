@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+body{
+    line-height: 1.4;
+}
+.container{
+    max-width: 1320px;
+    margin: auto;
+    
+}
+
+.privev{
+    padding: 0 28px 100px 0;
+    background-color: #594757;
+    color: #000;
+    font-size: 20px;
+}
+
+  .tabcontainer{
+    display: flex;
+     border: 1px solid white;
+     width: 1200px;
+     margin: auto;
+   
+  }
+
+
+  .tabheader{
+    background-color: #938791;
+    padding: 30px 35px;
+    width: 280px;
+  }
+
+
+  .tabcontent{
+    width: 920px;
+    position: relative;
+  }
+  .tabcontent img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  .tabcontent .tabcontent__decr{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    color: #fff;
+    font-family:  'Times New Roman', Times, serif;
+    background: rgb(89, 70, 87, 0.5);
+    font-size: 25px;
+    padding: 50px;
+    color: rgb(255, 255, 255, 0.6);
+  }
+  .tabheader h3 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+.tabitems {
+    margin-top: 35px;
+    padding-left: 26px;
+    border-left: 1px solid #000;
+    line-height: 1.6;
+}
+.tabitem{
+    cursor: pointer;
+    color: #4f4a4e;
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+}
+.tabactive-item{
+    color: #000;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.show{
+    display: block;
+}
+
+
+.hide{
+    display: none;
+}
+
+.lode{
+    animation-name: lode;
+    animation-duration: 0.5s;
+}
+
+
+@keyframes lode{
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
